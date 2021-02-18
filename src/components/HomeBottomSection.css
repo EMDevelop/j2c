@@ -1,0 +1,26 @@
+.homeBottomSection1-container {
+  height: 700px; /*fit-content; */
+  width: 100%;
+  background: var(--colourBackGrey);
+  color: var(--colourTextGrey);
+  align-items: center;
+  text-align: center;
+}
+
+.servicesContainer {
+  background-color: var(--colourBackWhite);
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+}
+
+.homeBottomSection2-container {
+  color: var(--colourTextGrey);
+}
+
+.reviewsContainer {
+  background-color: var(--colourBackGrey);
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+}

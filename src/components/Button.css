@@ -1,0 +1,48 @@
+:root {
+  background-color: #ffffff;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* This is when we're hovered on it I think*/
+.btn--primary {
+  background-color: var(--colourBackWhite);
+  color: var(--colourPop);
+  border: 1px solid var(--colourPop);
+}
+
+/* This is when we're hovered on it I think*/
+.btn--outline {
+  background: transparent;
+  color: var(--colourPop);
+  padding: 8px 20px;
+  border: 1px solid var(--colourPop);
+  transition: all 0.3s ease-out;
+}
+
+/* this is the main nav bar */
+.btn--medium {
+  padding: 8px 50px;
+  font-size: 20px;
+  border: 1px solid var(--colourPop);
+}
+
+/* this is the mobile nav bar */
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+  border: 1px solid var(--colourPop);
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+  background: var(--colourPop);
+  color: var(--colourBackWhite);
+  transition: all 0.3s ease-outl;
+}

@@ -1,0 +1,7 @@
+.formContainer {
+  background-color: var(--colourBackWhite);
+  height: 70%;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+}

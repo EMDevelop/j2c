@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "okta-neue";
+  src: url(fonts/Okta_Neue_UltraLight.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+html,
+body {
+  --colourPop: #e51a94; /* var(--colourPop); */
+  --colourTextGrey: #3e4a56; /* var(--colourTextGrey); */
+  --colourTextDark: #1f306d; /* var(--colourTextDark); */
+  --colourBackLilac: #e0e8fa; /* var(--colourBackLilac); */
+  --colourBackGrey: #f5f7fd; /* var(--colourBackGrey); */
+  --colourBackWhite: #ffffff; /* var(--colourBackWhite); */
+  margin: 0;
+  /* overflow: hidden; */
+  background-repeat: repeat;
+  font-family: okta-neue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.home,
+.about,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.titleDiv {
+  height: 200px;
+  background: transparent;
+  text-align: center;
+  color: var(--colourTextDark);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* 
+.particlesBackgroundDivs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+} */
+
+#particles-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--colourBackGrey);
+  /* background-image: url(""); */
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.body-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
