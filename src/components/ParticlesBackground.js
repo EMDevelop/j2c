@@ -17,20 +17,32 @@ function ParticlesBackground()  {
         params={{
             "particles": {
                 "number": {
-                    "value": 100
+                    "value": 150
                 },
                 "size": {
-                    "value": 3
+                    "value": 3,
+                    "random": true,
+
                 },
                 "color": {
                     "value": "#e51a94"
                 },
 
+                "shape": {
+                "type": "circle",
+
+                "image": {
+                    "src": "https://raw.githubusercontent.com/EMDevelop/images/main/Mobile-Phone-icon.png",
+                    "width": 100,
+                    "height": 100,
+                    },   
+                },
+
                 "line_linked": {
                     "enable": true,
-                    "distance": 80,
+                    "distance": 100,
                     "color": "#e51a94",
-                    "opacity": 1,
+                    "opacity": .6,
                     "width": 1
                 },
             },
@@ -38,7 +50,7 @@ function ParticlesBackground()  {
                     "events": {
                         "onhover": {
                             "enable": false,
-                            "mode": "repulse"
+                            "mode": "bubble"
                         }
                     }
                 }

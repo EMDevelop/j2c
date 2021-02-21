@@ -23,6 +23,8 @@ function Navbar() {
     useEffect(()=> {
         showButton();
     },[])
+
+    const services = 'Services '
     
     // whenever the screen size changes, check for the code
     window.addEventListener('resize',showButton)
@@ -42,21 +44,20 @@ function Navbar() {
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                            Services
-                        </Link>
-                    </li>
                     
+                
                     <li className='nav-item'>
                         <div class="dropdown">
-                            <button class="dropbtn">Dropdown
+                            <button class="dropbtn">{services}
                             <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Telephone Systems, Voip</a>
+                            <a href="#">Broadband</a>
+                            <a href="#">Video Conference Software</a>
+                            <a href="#">Mobile SIM</a>
+                            <a href="#">Smart Inbound Numbers</a>
+                            <a href="#">SIP Trunks</a>
                             </div>
                         </div>
                     </li>

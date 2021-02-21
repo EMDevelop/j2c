@@ -28,30 +28,30 @@ function HomeTopSection() {
           <div className =  'homeTopSection1-container'>
 
             <Grid container spacing={1} className={classes.grid}>
-              <Grid item xs={0} sm={6} md= {4}>
+              {/* <Grid item xs={0} sm={6} md= {4}>
                 <div className = 'homeParticleSection'>
                   <ParticlesHome/>
                 </div>
-              </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
+              </Grid> */}
+              <Grid item xs={12} sm={6} md= {6}>
                 <div className = 'homeTopItems'>
                   <h1>All your telephony needs under one local roof</h1>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
-                <div className = 'homeTopItems'>
+              <Grid item xs={12} sm={6} md= {6}>
+                <div className = 'homeTopForm'>
                     <ContactUs/>
                 </div>
               </Grid>
             </Grid>
           </div>
 
+      <div className='transparentSection'></div>   
 
 
 
 
-
-        <div className='titleDiv'>
+        <div className='titleWhyJ2C'>
           <h1> Why Just2Connect?</h1>
         </div>
           
@@ -87,6 +87,9 @@ function HomeTopSection() {
               </Grid>
             </Grid>
             </div>
+
+
+    <div className='transparentSection'></div>
         </div>
     )
 }

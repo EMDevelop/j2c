@@ -23,33 +23,33 @@ function HomeBottomSection() {
 
     return (
     <div>
-      <div className='titleDiv'>
+      <div className='titleServices'>
         <h1>Our Services</h1>
       </div>
 
         <div className =  'homeBottomSection1-container'>
             
 
-            <Grid container spacing={5} className={classes.grid}>
-              <Grid item xs={12} sm={6} md= {3}>
+            <Grid container spacing={10} className={classes.grid}>
+              <Grid item xs={12} sm={6} md= {6} lg={3}>
                 <div className = 'servicesContainer'>
                   <h1 className='servicesH1'>Telephone Systems</h1>
                   <p>Find Out More </p>
                 </div>
               </Grid>
-              <Grid item xs={12}  sm={6}  md= {3}>
+              <Grid item xs={12} sm={6} md= {6} lg={3}>
                 <div className = 'servicesContainer'>
                   <h1 className='servicesH1'>Broadband</h1>
                   <p>Find Out More </p>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6}  md= {3}>
+              <Grid item xs={12} sm={6} md= {6} lg={3}>
                 <div className = 'servicesContainer'>
                   <h1 className = 'servicesH1'>Video Conferencing</h1>
                   <p>Find Out More </p>
                  </div>
               </Grid>
-              <Grid item xs={12} sm={6}  md= {3}>
+              <Grid item xs={12} sm={6} md= {6} lg={3}>
                 <div  className = 'servicesContainer'>
                   <h1 className='servicesH1'>Mobile SIM</h1>
                   <p>Find Out More</p>
@@ -58,7 +58,9 @@ function HomeBottomSection() {
             </Grid>
         </div>
 
-    <div className='titleDiv'>
+    <div className='transparentSection'></div>   
+
+    <div className='titleTrustedBy'>
       <h1>Trusted By</h1>
     </div>
 
@@ -66,48 +68,51 @@ function HomeBottomSection() {
        <Grid container spacing={5} className={classes.grid}>
               <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
-            <Grid item xs={12} sm={6} md= {4}>
+                 <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
+                            <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
+                            <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
+                            <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md= {4}>
+                            <Grid item xs={12} sm={6} md= {4}>
                 <div className = 'reviewsContainer'>
-                  <h1>Company Name</h1>
-                  <h2>Person, Title</h2>
-                  <p>Quotation</p>
+                  <p>"Just 2 Connect helped me with x and y and they are really great, awesome, fantastic, whatever i am running out of things to type but now I think I should have enough text"</p>
+                  <h1>Bobson Incoporated</h1>
+                  <h2>Jimmy Bobson, CEO</h2>
                 </div>
               </Grid>
             </Grid>
+
         </div>
+
+        <div className='transparentSection'></div>   
   </div>
     )
 

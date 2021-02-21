@@ -23,9 +23,9 @@ function App() {
                 </switch>
               </div>
             </div>
-                <div id="particles-background">                
-                    <ParticlesBackground/>
-                </div>
+            <div id="particles-background">                
+                    {/* <ParticlesBackground/> */}
+            </div>
         </Router>       
       </div>
   );
