@@ -25,7 +25,7 @@ function ParticlesBackground()  {
 
                 },
                 "color": {
-                    "value": "#e51a94"
+                    "value": "#ffffff"
                 },
 
                 "shape": {
@@ -41,7 +41,7 @@ function ParticlesBackground()  {
                 "line_linked": {
                     "enable": true,
                     "distance": 100,
-                    "color": "#e51a94",
+                    "color": "#ffffff",
                     "opacity": .6,
                     "width": 1
                 },

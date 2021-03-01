@@ -1,0 +1,347 @@
+/* ----------------------------------------------------------------- */
+
+/* Main Banner */
+
+/* ----------------------------------------------------------------- */
+
+.MainBanner-container {
+  min-height: 60vh;
+  height: fit-content;
+  width: 100%;
+  background: transparent;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.Slogan {
+  letter-spacing: 2px;
+  font-size: 45px;
+  color: var(--colourPop);
+}
+
+.homeParticleSection {
+  /* border: 1px solid var(--colourPop); */
+  height: 100%;
+  width: auto;
+}
+
+.homeTopSlogan {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: inherit;
+  background-color: none;
+  color: var(--colourTextDark);
+  padding-left: 20%;
+  padding-right: 20%;
+  min-height: 300px;
+  /* border: 1px solid var(--colourPop); */
+}
+
+.homeTopForm {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: inherit;
+  background-color: none;
+}
+
+.homeRightSection {
+  /* border: 1px solid var(--colourPop); */
+  width: 33%;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Our Services */
+
+/* ----------------------------------------------------------------- */
+
+.centerServicesContainers {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  width: 100%;
+  height: 20px;
+}
+
+.OurServices-container {
+  width: 100%;
+  color: var(--colourTextGrey);
+  background-color: var(--colourBackWhite);
+  height: fit-content;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  vertical-align: middle;
+  padding-bottom: 100px;
+}
+
+.OurServicesTitle {
+  font-size: 40px;
+  color: var(--colourTextDark);
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.servicesContainer {
+  /* background-color: var(--colourBackWhite); */
+  background: var(--colourBackWhite);
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  margin-left: 25%;
+}
+
+.servicesContainer:hover {
+  background: var(--colourTextDark);
+  color: var(--colourBackWhite);
+  opacity: 0.9;
+}
+
+.whyJ2C-container {
+  /* background: var(--colourBackGrey); */
+  background: transparent;
+  color: var(--colourTextGrey);
+}
+
+.ServicesIMG {
+  height: 70%;
+  width: auto;
+}
+
+.SIMIMG {
+  height: 50%;
+  width: auto;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Why J2C */
+
+/* ----------------------------------------------------------------- */
+
+.whyJ2C-container {
+  width: 100%;
+  color: var(--colourTextGrey);
+  background-color: var(--colourBackWhite);
+  height: fit-content;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  padding-bottom: 100px;
+}
+
+.WhyJ2CTitle {
+  font-size: 40px;
+  color: var(--colourTextDark);
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.Benefit {
+  font-size: 32px;
+  color: var(--colourTextGrey);
+  background: transparent;
+  letter-spacing: 0.5px;
+}
+
+.BenefitDescription {
+  font-size: 20px;
+  color: var(--colourTextGrey);
+}
+
+.Benefit:hover {
+  color: var(--colourPop);
+}
+
+.BenefitDescription:hover {
+  color: var(--colourPop);
+}
+
+.benefitContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+}
+
+.PhoneDown {
+  height: 20px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.WifiDown {
+  height: 30px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Trusted By */
+
+/* ----------------------------------------------------------------- */
+
+.TrustedBy-container {
+  background-color: var(--colourBackWhite);
+
+  height: fit-content;
+  /* border-radius: 20px; */
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  padding-bottom: 100px;
+}
+
+.trustedByTitle {
+  font-size: 40px;
+  color: var(--colourTextDark);
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.TrustedBy-container p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nameCompanyLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: lightblue;
+  text-align: right;
+  width: 70%;
+  float: right;
+  /* margin: auto 0 auto auto; */
+}
+
+.nameTitleHolder {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.imageHolder {
+  width: 30%;
+}
+
+.reviewLogo {
+  padding-top: 1px;
+  height: 20px;
+  width: auto;
+}
+
+.testimonialContainer {
+  background: var(--colourBackWhite);
+  height: fit-content;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftImageContainer {
+  height: 100%;
+  /* border: 1px solid var(--colourPop); */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rightTextContainer {
+  height: 100%;
+  /* border: 1px solid var(--colourPop); */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quote {
+  color: var(--colourTextGrey);
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.Name {
+  color: var(--colourTextDark);
+  text-emphasis: bold;
+}
+
+.Company {
+  color: var(--colourTextGrey);
+  padding-bottom: 20px;
+}
+
+/* .logos  */
+
+.MicklefieldHall {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.TravelTimeWorld {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.Yellowyoyo {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.OliverMyles {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.DavyAssociates {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.Greens {
+  border-radius: 2px;
+}
+
+/* --------------------------- */
+/* .titleDiv  */
+/* --------------------------- */
+
+.transparentSection {
+  /* background-color: yellow; */
+  background-color: transparent;
+  height: 150px;
+}
+
+.HomeContactUs {
+  width: 100%;
+  height: fit-content;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+}

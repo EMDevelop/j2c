@@ -12,7 +12,7 @@
 
 /* This is when we're hovered on it I think*/
 .btn--primary {
-  background-color: var(--colourBackWhite);
+  background-color: var(--colourPop);
   color: var(--colourPop);
   border: 1px solid var(--colourPop);
 }
@@ -20,10 +20,13 @@
 /* This is when we're hovered on it I think*/
 .btn--outline {
   background: transparent;
-  color: var(--colourPop);
+  color: var(--colourBackWhite);
+  background: var(--colourPop);
   padding: 8px 20px;
   border: 1px solid var(--colourPop);
   transition: all 0.3s ease-out;
+  border-radius: 100px;
+  white-space: nowrap;
 }
 
 /* this is the main nav bar */
@@ -42,7 +45,7 @@
 
 .btn--medium:hover,
 .btn--large:hover {
-  background: var(--colourPop);
-  color: var(--colourBackWhite);
+  background: var(--colourBackWhite);
+  color: var(--colourPop);
   transition: all 0.3s ease-outl;
 }

@@ -24,7 +24,7 @@ function App() {
               </div>
             </div>
             <div id="particles-background">                
-                    {/* <ParticlesBackground/> */}
+                    <ParticlesBackground/>
             </div>
         </Router>       
       </div>

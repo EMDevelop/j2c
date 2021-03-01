@@ -37,49 +37,12 @@ body {
   font-size: 3rem;
 }
 
-/* --------------------------- */
-/* .titleDiv  */
-/* --------------------------- */
-.titleWhyJ2C {
-  height: 100px;
-  /* background: transparent; */
-  background: var(--colourBackGrey);
-  color: var(--colourTextDark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titleServices {
-  height: 100px;
-  /* background: transparent; */
-  background: var(--colourBackLilac);
-  color: var(--colourTextDark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titleTrustedBy {
-  height: 100px;
-  /* background: transparent; */
-  background: var(--colourBackGrey);
-  color: var(--colourTextDark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.transparentSection {
-  background-color: transparent;
-  height: 150px;
-}
-
 #particles-background {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--colourBackWhite);
+  background-color: var(--colourTextDark);
+  opacity: 0.95;
   /* background-color: var(--colourBackWhite); */
   /* background-image: url(""); */
   background-size: cover;

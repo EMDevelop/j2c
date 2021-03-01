@@ -1,15 +1,15 @@
 import '../../App.css';
-import HomeTopSection from '../HomeTopSection' ;
-import HomeBottomSection from '../HomeBottomSection' ;
+import HomeContents from '../HomeContents' ;
+
 import Footer from '../Footer'
 import React from 'react';
-import Particles, { ThemeMode } from 'react-particles-js';
+
 
 function Home() {
     return (
         <>
-                <HomeTopSection/>
-                <HomeBottomSection/>
+                <HomeContents/>
+
                 <Footer/>
         </>
     )

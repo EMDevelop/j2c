@@ -1,14 +1,89 @@
 .formContainer {
   background-color: var(--colourTextDark);
-  height: 70%;
-  width: 70%;
+  height: max-content;
+  min-height: 85%;
+
+  width: 50%;
+  max-width: 600px;
   border-radius: 20px;
-  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  box-shadow: 1px 1px 15px 9px #e4e3e394;
   opacity: 0.9;
   font-size: 50px;
   color: var(--colourBackWhite);
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  /* box-shadow: 1px 1px 15px 7px var(--colourTextGrey); */
+}
+@media screen and (max-width: 940px) {
+  .formContainer {
+    width: 70%;
+  }
 }
 
 .formContainer h1 {
+  padding-bottom: 20px;
+  padding-top: 8%;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 25px;
+  color: var(--colourBackWhite);
+}
+
+.input {
+  height: 50px;
+  width: 85%;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 20px;
+  color: var(--colourPop);
+}
+
+.formItem {
+  grid: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.textArea {
+  font-size: 20px;
+  width: 85%;
+  height: 100px;
+  max-height: 150px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: var(--colourPop);
+}
+
+.submitButton {
+  color: var(--colourBackWhite);
+  font-size: 20px;
+  background: var(--colourPop);
+  padding: 8px 20px;
+  border: 1px solid var(--colourPop);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.submitButton:hover {
+  color: var(--colourPop);
+  font-size: 20px;
+  background: var(--colourTextDark);
+  padding: 8px 20px;
+  border: 1px solid var(--colourPop);
+  border-radius: 20px;
+}
+
+.submitButton:active {
+  outline: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }

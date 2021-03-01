@@ -52,9 +52,9 @@ function Navbar() {
                             <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                            <a href="#">Telephone Systems, Voip</a>
+                            <a href="#">Telephone Systems, VoIP</a>
                             <a href="#">Broadband</a>
-                            <a href="#">Video Conference Software</a>
+                            <a href="#">Video Conferencing</a>
                             <a href="#">Mobile SIM</a>
                             <a href="#">Smart Inbound Numbers</a>
                             <a href="#">SIP Trunks</a>
@@ -64,7 +64,7 @@ function Navbar() {
 
                     <li className='nav-item'>
                         <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                            About
+                           <p class = 'text-base' >About</p> 
                         </Link>
                     </li>
                     <li className='nav-item'>
