@@ -43,7 +43,7 @@ function HomeContents() {
           <div className =  'MainBanner-container'>
 
             <Grid container spacing={3} className={classes.grid}>
-              <Grid item xs={12} sm={6} md= {6}>
+              <Grid item xs={12} sm={12} md= {6}>
                 <div className = 'homeParticleSection'>
                   {/* <ParticlesHome/> */}
                 </div>

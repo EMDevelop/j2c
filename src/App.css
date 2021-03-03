@@ -42,6 +42,7 @@ body {
   height: 100%;
   position: fixed;
   background-color: var(--colourTextDark);
+  /* background-color: white; */
   opacity: 0.95;
   /* background-color: var(--colourBackWhite); */
   /* background-image: url(""); */
