@@ -22,6 +22,7 @@
   font-weight: bold;
   color: var(--colourBackWhite);
   text-align: left;
+  text-shadow: #02144a94 0.1em 0.1em 0.2em;
 }
 
 .homeParticleSection {
@@ -62,20 +63,14 @@
 
 /* ----------------------------------------------------------------- */
 
-/* .centerServicesContainers {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 20px;
-} */
-
 .OurServices-container {
   width: 100%;
   color: var(--colourTextGrey);
   background-color: var(--colourBackWhite);
   height: fit-content;
-  min-height: 700px;
+  min-height: 600px;
   box-shadow: 1px 1px 15px 8px #02144a94;
+  border-radius: 10px;
   vertical-align: middle;
   padding-bottom: 100px;
 }
@@ -103,11 +98,11 @@
   margin-left: 25%;
 }
 
-.servicesContainer:hover {
+/* .servicesContainer:hover {
   background: var(--colourTextDark);
   color: var(--colourBackWhite);
   opacity: 0.9;
-}
+} */
 
 .whyJ2C-container {
   /* background: var(--colourBackGrey); */

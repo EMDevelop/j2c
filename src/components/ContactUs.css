@@ -1,5 +1,5 @@
 .formContainer {
-  background-color: var(--colourTextDark);
+  background-color: var(--colourBackLilac);
   height: max-content;
   min-height: 85%;
 
@@ -9,7 +9,7 @@
   box-shadow: 1px 1px 15px 8px #02144a94;
   opacity: 0.9;
   font-size: 50px;
-  color: var(--colourBackWhite);
+  color: var(--colourPop);
   margin-top: 100px;
   margin-bottom: 100px;
 
@@ -27,7 +27,7 @@
   padding-right: 20px;
   padding-left: 20px;
   font-size: 25px;
-  color: var(--colourBackWhite);
+  color: var(--colourPop);
 }
 
 .input {
@@ -73,7 +73,7 @@
 .submitButton:hover {
   color: var(--colourPop);
   font-size: 20px;
-  background: var(--colourTextDark);
+  background: var(--colourBackLilac);
   padding: 8px 20px;
   border: 1px solid var(--colourPop);
   border-radius: 20px;

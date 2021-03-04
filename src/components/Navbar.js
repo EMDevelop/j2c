@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './Navbar.css'
 import {Button} from './Button'
 import logo from '../images/MainLogo.png'
+import PinkPhone from '../images/icons/PinkPhone.png'
 
 function Navbar() {
 
@@ -46,7 +47,7 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     
                 
-                    <li className='nav-item'>
+                    {/* <li className='nav-item'>
                         <div class="dropdown">
                             <button class="dropbtn">{services}
                             <i class="fa fa-caret-down"></i>
@@ -60,16 +61,47 @@ function Navbar() {
                             <a href="#">SIP Trunks</a>
                             </div>
                         </div>
+                    </li> */}
+
+                    <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                           <p className = 'navText' >Telephone Systems, VoIP</p> 
+                        </Link>
+                    </li>
+
+                     <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                           <p className = 'navText' > Video Conferencing</p> 
+                        </Link>
+                    </li>
+
+                     <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                           <p className = 'navText' >Broadband</p> 
+                        </Link>
+                    </li>
+
+                     <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                           <p className = 'navText' >Mobile SIM</p> 
+                        </Link>
+                    </li>
+
+                     <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                           <p className = 'navText'>Smart Inbound Numbers</p> 
+                        </Link>
+                    </li>
+
+                     <li className='nav-item'>
+                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                          <p className = 'navText'>SIP Trunks</p> 
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
                         <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                           <p class = 'text-base' >About</p> 
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                            Contact
+                           <p className = 'navText'> Contact</p> 
                         </Link>
                     </li>
                     <li className='nav-item'>
@@ -78,7 +110,7 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle = 'btn--outline' > 01442 573030 </Button>}
+                {button && <Button buttonStyle = 'btn--outline' > <img src={PinkPhone} alt="" className='CTAPhone'/> 01442 573030 </Button>}
 
             </div>
         </nav>

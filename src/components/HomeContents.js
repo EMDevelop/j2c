@@ -50,7 +50,7 @@ function HomeContents() {
               </Grid>
               <Grid item xs={12} sm={12} md= {6}>
                 <div className = 'homeTopSlogan'>
-                  <h1 className='Slogan'>All your telephony and broadband needs under one local roof</h1>
+                  <h1 className='Slogan'>Telephony and broadband under one local roof</h1>
                 </div>
               </Grid>
             </Grid>
@@ -235,7 +235,7 @@ function HomeContents() {
                             <img src={Greens} alt="Greens Of Berkhamsted" className = 'Greens'/>
                         </div>
                         <div className = 'rightTextContainer'>
-                            <p className='Quote' >"Just2Connect are very reliable, responsive and helpful for my business needs. They also reduced my costs from BT - I would highly reccomend them to anyone"</p>
+                            <p className='Quote' >"Reliable, responsive and helpful for my business needs. I would highly reccomend them to anyone"</p>
                             <div class="text-colourTextDark font-bold uppercase mt-6">- David Green, Owner</div>
                             <div className='Company'>Greens Of Berkhamsted</div>
                         </div>

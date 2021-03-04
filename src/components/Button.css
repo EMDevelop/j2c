@@ -20,13 +20,17 @@
 /* This is when we're hovered on it I think*/
 .btn--outline {
   background: transparent;
-  color: var(--colourBackWhite);
-  background: var(--colourPop);
+  color: var(--colourPop);
+  background: var(--colourBackWhite);
   padding: 8px 20px;
   border: 1px solid var(--colourPop);
   transition: all 0.3s ease-out;
   border-radius: 100px;
   white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* this is the main nav bar */

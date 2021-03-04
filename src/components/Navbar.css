@@ -42,8 +42,9 @@ img {
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  display: flex;
+  /* grid-template-columns: repeat(6, auto); */
+  flex-direction: row;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -54,6 +55,18 @@ img {
 
 .nav-item {
   height: 80px;
+}
+
+.navText {
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+  color: var(--colourTextGrey);
+  letter-spacing: 1px;
+}
+
+.navText:hover {
+  font-weight: bold;
+  color: var(--colourPop);
 }
 
 .nav-links {
@@ -150,6 +163,12 @@ img {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.CTAPhone {
+  height: 20px;
+  width: auto;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 640px) {
@@ -301,10 +320,6 @@ img {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin-top: 80px;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
   }
 
   /* JZ: this is where the actual links are (above) */

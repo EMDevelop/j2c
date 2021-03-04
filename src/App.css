@@ -58,3 +58,109 @@ body {
   left: 0;
   z-index: 100;
 }
+
+.testimonialContainertest1 {
+  background: var(--colourBackWhite);
+  height: fit-content;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #02144a94;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftImageContainertest1 {
+  height: 100%;
+  /* border: 1px solid var(--colourPop); */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rightTextContainertest1 {
+  height: 100%;
+  /* border: 1px solid var(--colourPop); */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nametest {
+  color: var(--colourTextDark);
+  text-emphasis: bold;
+}
+
+.Companytest {
+  color: var(--colourTextGrey);
+  padding-bottom: 20px;
+}
+
+.MicklefieldHalltest {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* -------------------------- 2  -------------------------- */
+
+.container2 {
+  background: var(--colourBackWhite);
+  max-height: fit-content;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 8px #02144a94;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.logoContainer {
+  width: 50%;
+  /* border: 1px solid var(--colourPop); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  height: 40px;
+  width: auto;
+  justify-content: left;
+}
+
+.top2 {
+  /* background-color: red; */
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom2 {
+  /* background-color: yellow; */
+  flex: 0.5;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameTitleContainer {
+  width: 50%;
+  /* border: 1px solid var(--colourPop); */
+}
+
+.Quotetest {
+  color: var(--colourTextGrey);
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 30px;
+}
