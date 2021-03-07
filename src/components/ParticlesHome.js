@@ -18,7 +18,9 @@ function ParticlesHome() {
               },
             },
             color: {
-              value: "#1f306d",
+              // value: "#1f306d",
+              value: "#fffff",
+
             },
             shape: {
               type: "edge",
@@ -70,8 +72,11 @@ function ParticlesHome() {
               radius: 2, //this will change the radius from the lines in the svg file//
             },
             url:
+              // "https://prod.liveshare.vsengsaas.visualstudio.com/join?94FC8715BEA77850DF68264642C2F8739EC7",
               "https://raw.githubusercontent.com/juliazieniewicz/backgroundsvg/4eeafe37c01df39add4a5d095a7ba47829fb1706/untitled%20(12).svg",
-            inline: {
+              // "https://raw.githubusercontent.com/juliazieniewicz/backgroundsvg/8ff7033a595abe75b264b622cd1a33923425f5bb/phone_new_particles.svg",
+
+              inline: {
               arrangement: "equidistant",
             },
             draw: {

@@ -5,7 +5,7 @@
 /* ----------------------------------------------------------------- */
 
 .MainBanner-container {
-  min-height: 90vh;
+  min-height: 100vh;
   height: fit-content;
   width: 100%;
   background: transparent;
@@ -18,7 +18,7 @@
 
 .Slogan {
   letter-spacing: 2px;
-  font-size: 55px;
+  font-size: 3.5rem;
   font-weight: bold;
   color: var(--colourBackWhite);
   text-align: left;
@@ -64,45 +64,53 @@
 /* ----------------------------------------------------------------- */
 
 .OurServices-container {
-  width: 100%;
+  width: 80%;
   color: var(--colourTextGrey);
-  background-color: var(--colourBackWhite);
-  height: fit-content;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background: transparent;
+  backdrop-filter: blur(20px);
+  height: max-content;
   min-height: 600px;
   box-shadow: 1px 1px 15px 8px #02144a94;
-  border-radius: 10px;
-  vertical-align: middle;
-  padding-bottom: 100px;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
 }
 
 .OurServicesTitle {
-  font-size: 40px;
-  color: var(--colourTextDark);
+  font-size: 2.25rem;
+  color: var(--colourBackWhite);
+  text-shadow: #02144a94 0.1em 0.1em 0.2em;
   text-align: center;
-  padding-top: 100px;
   letter-spacing: 1px;
-  padding-bottom: 50px;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+.outerGrid {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .servicesContainer {
-  /* background-color: var(--colourBackWhite); */
   background: var(--colourBackWhite);
-  height: 250px;
   border-radius: 20px;
-  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  box-shadow: 1px 1px 15px 8px #02144a94;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
-  margin-left: 25%;
+  max-width: 250px;
+  min-height: 200px;
+  /* somehow need to center this while having a max width
+  max-width: 300px; */
 }
-
-/* .servicesContainer:hover {
-  background: var(--colourTextDark);
-  color: var(--colourBackWhite);
-  opacity: 0.9;
-} */
 
 .whyJ2C-container {
   /* background: var(--colourBackGrey); */
@@ -110,14 +118,21 @@
   color: var(--colourTextGrey);
 }
 
+.outServicesHeader {
+  font-size: 1.5rem;
+  padding-top: 5%;
+}
+
 .ServicesIMG {
-  height: 70%;
+  max-height: 150px;
   width: auto;
+  padding: 3%;
 }
 
 .SIMIMG {
-  height: 50%;
+  max-height: 100px;
   width: auto;
+  padding: 3%;
 }
 
 /* ----------------------------------------------------------------- */
@@ -127,16 +142,21 @@
 /* ----------------------------------------------------------------- */
 
 .whyJ2C-container {
-  width: 100%;
+  width: 80%;
   color: var(--colourTextGrey);
-  background-color: var(--colourBackWhite);
+  /* background-color: var(--colourBackWhite); */
+  background: var(--colourBackLilac);
+  backdrop-filter: blur(20px);
   height: fit-content;
   box-shadow: 1px 1px 15px 8px #02144a94;
   padding-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
 }
 
 .WhyJ2CTitle {
-  font-size: 40px;
+  font-size: 2.25rem;
   color: var(--colourTextDark);
   text-align: center;
   padding-top: 100px;
@@ -145,14 +165,14 @@
 }
 
 .Benefit {
-  font-size: 32px;
+  font-size: 1.75rem;
   color: var(--colourTextGrey);
   background: transparent;
   letter-spacing: 0.5px;
 }
 
 .BenefitDescription {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--colourTextGrey);
 }
 
@@ -192,16 +212,18 @@
 /* ----------------------------------------------------------------- */
 
 .TrustedBy-container {
-  background-color: var(--colourBackWhite);
-
   height: fit-content;
-  /* border-radius: 20px; */
   box-shadow: 1px 1px 15px 8px #02144a94;
   padding-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: blur(20px);
 }
 
 .trustedByTitle {
-  font-size: 40px;
+  font-size: 2.25rem;
   color: var(--colourTextDark);
   text-align: center;
   padding-top: 100px;
@@ -241,16 +263,26 @@
   width: auto;
 }
 
+.FiveStar {
+  height: 20px;
+  width: auto;
+}
+
 .testimonialContainer {
   background: var(--colourBackWhite);
   height: fit-content;
-  min-height: 200px;
+  min-height: 500px;
   border-radius: 20px;
-  box-shadow: 1px 1px 15px 8px #e4e3e394;
+  /* box-shadow: 1px 1px 15px 8px #e4e3e394; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 500px;
+  min-width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  outline: none;
 }
 
 .leftImageContainer {
@@ -279,7 +311,17 @@
   color: var(--colourTextGrey);
   padding-left: 30px;
   padding-top: 30px;
+  white-space: wrap;
+  overflow: hidden;
 }
+
+.Blanc {
+  white-space: wrap;
+  overflow: hidden;
+  padding-left: 30px;
+  color: transparent;
+}
+
 .Name {
   color: var(--colourTextDark);
   text-emphasis: bold;
@@ -342,103 +384,3 @@
   background: transparent;
   justify-content: center;
 }
-
-/* Responsive Design/ */
-
-/* Mobile: 360 x 640
-Mobile: 375 x 667
-Mobile: 360 x 720
-iPhone X: 375 x 812
-Pixel 2: 411 x 731
-Tablet: 768 x 1024
-Laptop: 1366 x 768
-High-res laptop or desktop: 1920 x 1080 */
-
-/* ------------------ */
-/* Mobile */
-/* ------------------ */
-
-@media (max-width: 767px) {
-  .MainBanner-container {
-    min-height: 90vh;
-  }
-
-  .Slogan {
-    font-size: 20px;
-  }
-}
-
-/* ------------------ */
-/* Tablet/medium devices */
-/* ------------------ */
-
-@media (min-width: 768px) {
-  .MainBanner-container {
-    min-height: 90vh;
-  }
-
-  .Slogan {
-    font-size: 30px;
-  }
-}
-
-/* ------------------ */
-/* desktops etc */
-/* ------------------ */
-
-@media (min-width: 992px) {
-  .MainBanner-container {
-    min-height: 80vh;
-  }
-
-  .Slogan {
-    font-size: 35px;
-  }
-}
-
-/* ------------------ */
-/* Large screens */
-/* ------------------ */
-@media (min-width: 1200px) {
-  .MainBanner-container {
-    min-height: 80vh;
-  }
-
-  .Slogan {
-    font-size: 45px;
-  }
-}
-
-@media (min-width: 1650px) {
-  .MainBanner-container {
-    min-height: 80vh;
-  }
-
-  .Slogan {
-    font-size: 55px;
-  }
-}
-
-/* 
-mvf
-desktop
-@media (min-width: 768px) {
-  .MainBanner-container {
-    min-height: 80vh;
-  }
-
-  .Slogan {
-    font-size: 55px;
-  }
-}
-mobile
-@media (max-width: 769px) {
-  .MainBanner-container {
-    background-color: yellow;
-    /* background-color: yellow; 
-  }
-
-  .Slogan {
-    font-size: 55px;
-  }
-} */

@@ -27,9 +27,26 @@
   display: flex;
   cursor: pointer;
   position: inherit;
-  width: 170px;
-  height: auto;
+  height: 100%;
+  width: 10%;
+  /* background-color: blue; */
 }
+
+.Nav-Logo img {
+  /* margin-left: 20px;
+  align-items: center;
+  justify-self: start;
+  display: flex;
+  cursor: pointer;
+  position: inherit; */
+  width: 50%;
+}
+
+.Just2ConnectLogo {
+  height: 60%;
+  width: 100%;
+}
+
 img {
   position: inherit;
   width: 100%;
@@ -58,7 +75,7 @@ img {
 }
 
 .navText {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   /* font-weight: bold; */
   color: var(--colourTextGrey);
   letter-spacing: 1px;
@@ -177,7 +194,6 @@ img {
   }
 
   .Nav-Logo {
-    margin-top: 20px;
     margin-left: 20px;
     align-items: center;
     justify-self: start;
@@ -187,6 +203,18 @@ img {
     width: 150px;
     height: auto;
   }
+
+  .Nav-Logo img {
+    margin-top: 0;
+    align-items: center;
+    justify-self: start;
+    display: flex;
+    cursor: pointer;
+    position: inherit;
+    width: 40%;
+    height: auto;
+  }
+
   img {
     position: inherit;
     width: 100%;

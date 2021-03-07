@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom'
 import './Navbar.css'
 import {Button} from './Button'
 import logo from '../images/MainLogo.png'
+import logo3 from '../images/Logo3.png'
 import PinkPhone from '../images/icons/PinkPhone.png'
+import WhitePinkPhone from '../images/icons/WhitePinkPhone.png'
 
 function Navbar() {
 
@@ -36,7 +38,7 @@ function Navbar() {
             <div className = "navbar-container">
                 
                 <Link className = 'Nav-Logo' to ='/'>
-                     <img src={logo} alt="Just2Connect Logo" to='/' onClick={closeMobileMenu}/>
+                     <img src={logo3} alt="Just2ConnectLogo" to='/' onClick={closeMobileMenu}/>
                 </Link>
                 
 
@@ -46,23 +48,6 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     
-                
-                    {/* <li className='nav-item'>
-                        <div class="dropdown">
-                            <button class="dropbtn">{services}
-                            <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                            <a href="#">Telephone Systems, VoIP</a>
-                            <a href="#">Broadband</a>
-                            <a href="#">Video Conferencing</a>
-                            <a href="#">Mobile SIM</a>
-                            <a href="#">Smart Inbound Numbers</a>
-                            <a href="#">SIP Trunks</a>
-                            </div>
-                        </div>
-                    </li> */}
-
                     <li className='nav-item'>
                         <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
                            <p className = 'navText' >Telephone Systems, VoIP</p> 
@@ -110,7 +95,7 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle = 'btn--outline' > <img src={PinkPhone} alt="" className='CTAPhone'/> 01442 573030 </Button>}
+                {button && <Button buttonStyle = 'btn--outline' > <img src={WhitePinkPhone} alt="" className='CTAPhone'/>01442 573030</Button>}
 
             </div>
         </nav>
