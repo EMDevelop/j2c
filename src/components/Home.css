@@ -16,6 +16,38 @@
   align-items: center;
 }
 
+.HeroImage {
+  /* border: 1px solid var(--colourPop); */
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+
+.Hero_Stock_Image {
+  height: 80%;
+  width: auto;
+  padding: 3%;
+  margin: auto;
+}
+
+.HeroSlogan {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  background-color: none;
+  color: var(--colourTextDark);
+  padding-left: 20%;
+  padding-right: 10%;
+  min-height: 300px;
+  padding-bottom: 20%;
+}
+
 .Slogan {
   letter-spacing: 2px;
   font-size: 3.5rem;
@@ -24,24 +56,13 @@
   text-align: left;
   text-shadow: #02144a94 0.1em 0.1em 0.2em;
 }
-
-.homeParticleSection {
-  /* border: 1px solid var(--colourPop); */
-  height: 100%;
-  width: auto;
-}
-
-.homeTopSlogan {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: inherit;
-  background-color: none;
-  color: var(--colourTextDark);
-  padding-left: 20%;
-  padding-right: 20%;
-  min-height: 300px;
-  /* border: 1px solid var(--colourPop); */
+.SloganDescription {
+  padding-top: 30px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: var(--colourBackWhite);
+  text-align: left;
+  text-shadow: #02144a94 0.1em 0.1em 0.2em;
 }
 
 .homeTopForm {
@@ -142,17 +163,15 @@
 /* ----------------------------------------------------------------- */
 
 .whyJ2C-container {
-  width: 80%;
+  width: 100%;
   color: var(--colourTextGrey);
   /* background-color: var(--colourBackWhite); */
-  background: var(--colourBackLilac);
-  backdrop-filter: blur(20px);
+  background-color: var(--colourBackLilac);
+  opacity: 0.9;
+  /* backdrop-filter: blur(5px); */
   height: fit-content;
   box-shadow: 1px 1px 15px 8px #02144a94;
   padding-bottom: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 20px;
 }
 
 .WhyJ2CTitle {
@@ -207,6 +226,44 @@
 
 /* ----------------------------------------------------------------- */
 
+/*About US*/
+
+/* ----------------------------------------------------------------- */
+
+.AboutContainer {
+  width: 100%;
+  min-height: 400px;
+  height: fit-content;
+  box-shadow: 1px 1px 15px 8px #02144a94;
+  backdrop-filter: blur(1000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.aboutHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--colourBackWhite);
+  text-shadow: #02144a94 0.1em 0.1em 0.2em;
+}
+
+.aboutParagraph {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  color: var(--colourBackWhite);
+  text-shadow: #02144a94 0.1em 0.1em 0.2em;
+  padding-top: 20px;
+}
+
+/* ----------------------------------------------------------------- */
+
 /* Trusted By */
 
 /* ----------------------------------------------------------------- */
@@ -224,7 +281,7 @@
 
 .trustedByTitle {
   font-size: 2.25rem;
-  color: var(--colourTextDark);
+  color: var(--colourBackWhite);
   text-align: center;
   padding-top: 100px;
   letter-spacing: 1px;
@@ -330,6 +387,15 @@
 .Company {
   color: var(--colourTextGrey);
   padding-bottom: 20px;
+}
+
+/* customise slider */
+/* https://sag1v.github.io/react-elastic-carousel/focusOnSelect */
+
+.rec.rec-arrow {
+  border-radius: 0;
+  color: red;
+  outline: none;
 }
 
 /* .logos  */

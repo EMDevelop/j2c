@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
+import NavbarTrial from './components/NavbarTrial';
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 // import Particles from 'react-particles-js';
@@ -17,6 +18,7 @@ function App() {
             <div class="body-particles">
               <div id="wrapper">
                 <Navbar />
+                {/* <NavbarTrial /> */}
                 <switch>
                   <Route path='/' exact component ={Home}/>
                   <Route path='/About' exact component ={About}/>
@@ -24,7 +26,7 @@ function App() {
               </div>
             </div>
             <div id="particles-background">                
-                    <ParticlesBackground/>
+                    {/* <ParticlesBackground/> */}
             </div>
         </Router>       
       </div>

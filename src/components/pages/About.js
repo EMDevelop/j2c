@@ -8,7 +8,7 @@ function About() {
 
   return (
         <div className='aboutBackground'>
-
+            
         </div>
   );
 

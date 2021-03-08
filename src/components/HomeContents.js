@@ -22,6 +22,9 @@ import PinkPhoneDown from '../images/icons/PinkPhoneDown.png'
 import BluePhoneDown from '../images/icons/BluePhoneDown.png'
 import Carousel from 'react-elastic-carousel'
 import FiveStars from '../images/icons/5Stars.png'
+import HeroPhone from '../images/Phone_Stock_Image_Hero.png'
+import HeroPhone1 from '../images/Phone_Stock_Image_Hero1.png'
+import HeroPhone2 from '../images/Phone_Stock_Image_Hero2.png'
 
 
 
@@ -41,7 +44,7 @@ const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 2 },
-  { width: 1200, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
 ];
 
 
@@ -57,14 +60,16 @@ function HomeContents() {
           <div className =  'MainBanner-container'>
 
             <Grid container spacing={3} className={classes.grid}>
-              <Grid item xs={12} sm={12} md= {6}>
-                <div className = 'homeParticleSection'>
+              <Grid item xs={0} sm={12} md= {6}>
+                <div className = 'HeroImage'>
                   {/* <ParticlesHome/> */}
-                </div>
+                  <img src={HeroPhone} alt="Business Phone System Just2Connect" className='Hero_Stock_Image' draggable="false"/>                </div>
               </Grid>
               <Grid item xs={12} sm={12} md= {6}>
-                <div className = 'homeTopSlogan'>
+                <div className = 'HeroSlogan'>
                   <h1 className='Slogan'>Telephony and broadband under one local roof</h1>
+                  <h1 className='SloganDescription'>Just 2 Connect are your local provider of everything Telecoms in Hertfordshire, Bedfordshire and Buckinghamshire. Whether it be x for your small company of y for your mid - large company, you will not get a better rate or service than through Just2Connect</h1>
+
                 </div>
               </Grid>
             </Grid>
@@ -175,6 +180,34 @@ function HomeContents() {
 
 {/* ---------------------------------------------------------------------------------------------------------------------------- */}
 
+{/* About us */}
+
+{/* ---------------------------------------------------------------------------------------------------------------------------- */}
+
+
+<div className = 'AboutContainer'> 
+
+
+
+      <h2 className = 'aboutHeading'> 
+         Welcome to Just2Connect: Professional business telephones and broadband in Hertfordshire, Bedfordshire and Buckinghamshire
+      </h2>
+      <p className = 'aboutParagraph'>
+         Just2Connect offers low-cost, flexible and tailored professional business telephony and broadband solutions.
+      </p>
+      <p className = 'aboutParagraph'>
+          Our experts understand the full range of business telephony systems. We can ensure you have a stable broadband connection at the speed that your business needs and provide professional landline numbers that connect to your home, your mobile or your office.
+      </p>
+      <p className = 'aboutParagraph'>
+          Whether you want traditional or cloud-based telephony, a new or additional phone number, a business-strength broadband connection or enterprise-class services for your phones, we will find the right solution for your business at a price you can afford.
+      </p>
+      
+</div>
+
+<div className='transparentSection'></div>
+
+{/* ---------------------------------------------------------------------------------------------------------------------------- */}
+
 {/* trusted by */}
 
 {/* ---------------------------------------------------------------------------------------------------------------------------- */}
@@ -185,7 +218,7 @@ function HomeContents() {
     <h1 className = 'trustedByTitle'>Trusted By</h1>
                
 
-                <Carousel breakPoints={breakPoints}>
+                <Carousel breakPoints={breakPoints} focusOnSelect={true}>
               
                         
                     <div className ='testimonialContainer'>
