@@ -1,84 +1,68 @@
 .navbar {
   background: var(--colourBackWhite);
-  height: 80px;
+  height: 90px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 16;
   position: sticky;
   top: 0;
   z-index: 999;
-  /* overflow: hidden; */
   box-shadow: 0 4px 2px -2px #02144a94;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 100%;
 }
 
 .Nav-Logo {
   margin-left: 20px;
-  align-items: center;
-  justify-self: start;
-  display: flex;
   cursor: pointer;
   position: inherit;
   height: 100%;
-  width: 10%;
-  /* background-color: blue; */
-}
-
-.Nav-Logo img {
-  /* margin-left: 20px;
-  align-items: center;
-  justify-self: start;
+  width: 150px;
   display: flex;
-  cursor: pointer;
-  position: inherit; */
-  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .Just2ConnectLogo {
-  height: 60%;
-  width: 100%;
-}
-
-img {
-  position: inherit;
-  width: 100%;
-  height: 100%;
-}
-
-.fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
+  height: 80%;
+  width: auto;
 }
 
 .nav-menu {
   display: flex;
-  /* grid-template-columns: repeat(6, auto); */
   flex-direction: row;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 60vw;
   justify-content: center;
+  align-items: right;
   margin-right: 2rem;
 }
 
 .nav-item {
-  height: 80px;
+  height: 90px;
+  width: 200px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.nav-item-blank {
+  display: none;
+}
+
+.nav-item-blank {
+  display: none;
+}
+
+.nav-item:hover {
+  color: var(--colourPop);
 }
 
 .navText {
-  font-size: 0.8rem;
-  /* font-weight: bold; */
+  font-size: 1rem;
   color: var(--colourTextGrey);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .navText:hover {
@@ -87,11 +71,12 @@ img {
 }
 
 .nav-links {
+  font-size: 1rem;
   color: var(--colourTextGrey);
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
   height: 100%;
   padding-left: 30px;
   padding-right: 30px;
@@ -102,6 +87,7 @@ img {
   border-bottom: 2px solid var(--colourPop);
   transition: all 0.2s ease-out;
   color: var(--colourPop);
+  font-weight: bold;
 }
 
 .fa-bars {
@@ -116,109 +102,28 @@ img {
   display: none;
 }
 
-/* -------------------------- */
-/* Drop Down List  */
-/* -------------------------- */
-
-.dropdown {
-  display: flex;
-  height: 100%;
-  background-color: var(--colourBackWhite);
-  border-bottom: 2px solid var(--colourBackWhite);
-}
-
-.dropdown:hover {
-  border-bottom: 2px solid var(--colourPop);
-  transition: all 0.2s ease-out;
-  color: var(--colourPop);
-}
-
-/* Dropdown button */
-.dropbtn {
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 100%;
-  font-size: 16px;
-  color: var(--colourTextGrey);
-  background-color: var(--colourBackWhite);
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--colourBackWhite);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-top: 80px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  color: var(--colourTextGrey);
-  border-bottom: 2px solid var(--colourBackWhite);
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  border-bottom: 2px solid var(--colourPop);
-  transition: all 0.3s ease-out;
-  color: var(--colourPop);
-  /* height: 80px; */
-}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .CTAPhone {
-  height: 20px;
+  height: 30px;
   width: auto;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
-@media screen and (max-width: 640px) {
+.CTAText {
+  font-size: 25px;
+}
+
+/* ---------------------------------------------------- */
+/*  MOBILE */
+/* ---------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
   .NavbarItems {
     position: relative;
-  }
-
-  .Nav-Logo {
-    margin-left: 20px;
-    align-items: center;
-    justify-self: start;
-    display: flex;
-    cursor: pointer;
-    position: inherit;
-    width: 150px;
-    height: auto;
-  }
-
-  .Nav-Logo img {
-    margin-top: 0;
-    align-items: center;
-    justify-self: start;
-    display: flex;
-    cursor: pointer;
-    position: inherit;
-    width: 40%;
-    height: auto;
-  }
-
-  img {
-    position: inherit;
-    width: 100%;
-    height: 100%;
   }
 
   .nav-menu {
@@ -227,7 +132,7 @@ img {
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 10vh;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -248,28 +153,9 @@ img {
     display: table;
   }
 
-  .dropdown {
-    /* float: left;
-  overflow: hidden; */
-    color: var(--col ourTextGrey);
-    display: table;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    /* padding: 0.5rem 1rem; */
-  }
-
   .nav-links:hover {
     background-color: var(--colourBackWhite);
-    color: var(--colourPop);
     border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
   }
 
   .menu-icon {
@@ -283,7 +169,7 @@ img {
   }
 
   .fa-times {
-    color: var(--colourBackWhite);
+    color: var(--colourTextGrey);
     font-size: 2rem;
   }
 
@@ -295,7 +181,7 @@ img {
     width: 80%;
     text-decoration: none;
     font-size: 1.5rem;
-    background-color: transparent;
+    background-color: var(--colourBackWhite);
     color: var(--colourPop);
     padding: 14px 20px;
     border: 1px solid var(--colourPop);
@@ -303,59 +189,41 @@ img {
   }
 
   .nav-links-mobile:hover {
-    background: var(--colourPop);
-    color: var(--colourBackWhite);
+    background: var(--colourBackWhite);
+    /* color: #1888ff; */
     transition: 250ms;
+    border-bottom: 2px solid var(--colourPop);
+    transition: all 0.3s ease-out;
+    color: var(--colourPop);
   }
 
-  /* -------------------------- */
-  /* Drop Down List - MOBILE */
-  /* -------------------------- */
+  button {
+    display: none;
+  }
 
-  /* -------------------------- */
-  /* Drop Down List  */
-  /* -------------------------- */
-
-  .dropdown {
+  .Nav-Logo {
+    margin-left: 20px;
+    align-items: center;
+    justify-self: start;
     display: flex;
+    cursor: pointer;
+    position: inherit;
     height: 100%;
-    background-color: var(--colourBackWhite);
   }
 
-  .dropdown:hover {
-    border-bottom: 2px solid var(--colourPop);
-    transition: all 0.2s ease-out;
-    color: var(--colourPop);
-  }
-
-  /* Dropdown button */
-  .dropbtn {
-    height: 100%;
+  /* .Nav-Logo img {
     width: 100%;
-    border: none;
-    outline: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 100%;
-    font-size: 16px;
-    color: var(--colourTextGrey);
-    background-color: var(--colourBackWhite);
+    height: auto;
+    object-fit: contain;
+  } */
+
+  .nav-item {
+    /* height: 10vh; */
+    width: auto;
+    /* background-color: red; */
   }
 
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    background-color: var(--colourBackWhite);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    margin-top: 80px;
-  }
-
-  /* JZ: this is where the actual links are (above) */
-
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    border-bottom: 2px solid var(--colourPop);
-    transition: all 0.2s ease-out;
-    color: var(--colourPop);
+  .nav-item-blank {
+    display: block;
   }
 }
