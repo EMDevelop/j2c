@@ -1,0 +1,104 @@
+.TSHero {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: var(--colourBackLilac);
+  color: var(--colourTextDark);
+  box-shadow: 1px 1px 15px 8px #b2b6ba;
+}
+
+/* --------------------------------------- */
+/* Content */
+/* --------------------------------------- */
+
+.TSContentContainer {
+  width: 100%;
+  min-height: 1000px;
+  height: fit-content;
+  padding-bottom: 40px;
+  background-color: var(--colourBackGrey);
+  box-shadow: 1px 1px 15px 8px #b2b6ba;
+}
+
+.TSContentTitle {
+  font-size: 3rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--colourTextDark);
+}
+
+.TSGridContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+  height: fit-content;
+  background-color: red;
+}
+
+.TSContentGrid {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.temp {
+  background-color: var(--colourBackLilac);
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* --------------------------------------- */
+/* FAQ */
+/* --------------------------------------- */
+
+.TSFAQ {
+  width: 100%;
+  min-height: 500px;
+  height: fit-content;
+  background-color: var(--colourBackGrey);
+  padding-bottom: 40px;
+  box-shadow: 1px 1px 15px 8px #b2b6ba;
+}
+
+.TSFAQTitle {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TSFAQText {
+  font-size: 3rem;
+  color: var(--colourTextDark);
+}
+
+/* --------------------------------------- */
+/* Contact Us */
+/* --------------------------------------- */
+
+.TSContactUs {
+  width: 100%;
+  height: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+}

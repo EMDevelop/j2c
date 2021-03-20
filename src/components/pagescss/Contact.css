@@ -1,0 +1,128 @@
+/* Hero? */
+.ContactHero {
+  width: 100%;
+  min-height: 20vh;
+  background-color: var(--colourBackLilac);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: var(--colourTextBlue);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ContactHeroText {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--colourTextDark);
+  text-align: left;
+  /* text-shadow: #02144a94 0.1em 0.1em 0.2em; */
+}
+
+.ContactHeroTextSmall {
+  padding-top: 30px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: var(--colourTextGrey);
+  text-align: left;
+  /* text-shadow: #02144a94 0.1em 0.1em 0.2em; */
+}
+
+/* New Contact us */
+
+.ContactFormContainer {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.CompanyInfo {
+  flex: 1;
+  background-color: violet;
+  height: 100%;
+}
+.EmailForm {
+  flex: 2;
+  height: 100%;
+  background-color: yellow;
+}
+
+/* In Good Company */
+
+.GoodCompany {
+  width: 100%;
+  background-color: var(--colourBackWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GoodCompanyTitle .GoodCompanyText {
+  font-size: 2rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--colourTextDark);
+}
+
+.GoodCompanyImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .logos  */
+
+.MicklefieldHall {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+.TravelTimeWorld {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 100px;
+  width: auto;
+}
+
+.Yellowyoyo {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+.OliverMyles {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+.DavyAssociates {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+.Greens {
+  border-radius: 2px;
+  height: 50px;
+  width: auto;
+}
+
+/* Email Address, phone, address */
+
+/* Google Maps */

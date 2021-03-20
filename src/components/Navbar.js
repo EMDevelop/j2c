@@ -4,8 +4,8 @@ import './Navbar.css'
 import {Button} from './Button'
 import logo from '../images/MainLogo.png'
 import logo3 from '../images/Logo3.png'
-import PinkPhone from '../images/icons/PinkPhone.png'
-import WhitePinkPhone from '../images/icons/WhitePinkPhone.png'
+import WhitePinkPhone from '../images/icons-old/WhitePinkPhone.png'
+import Dropdown from './Dropdown';
 
 function Navbar() {
 
@@ -14,6 +14,8 @@ function Navbar() {
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false) // when menu option selected, get rid of side bar. 
     const [button, setButton] = useState(true)
+
+    const [dropdown, setDropdown] = useState(false);
     
     const showButton = () => {
         if(window.innerWidth <= 960){
@@ -27,7 +29,27 @@ function Navbar() {
         showButton();
     },[])
 
-    const services = 'Services '
+      const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  const extendElement = () => {
+  dropdown ? setDropdown(false) : setDropdown(true);
+}
+
+    // const services = 'Services '
     
     // whenever the screen size changes, check for the code
     window.addEventListener('resize',showButton)
@@ -35,10 +57,10 @@ function Navbar() {
     return (
         <>
         <nav className="navbar">
-            <div className = "navbar-container">
+           
                 
                 <Link className = 'Nav-Logo' to ='/'>
-                     <img src={logo3} alt="Just2ConnectLogo" to='/' onClick={closeMobileMenu}/>
+                     <img src={logo3} className ='Just2ConnectLogo' alt="Just2ConnectLogo" to='/' onClick={closeMobileMenu}/>
                 </Link>
                 
 
@@ -46,58 +68,71 @@ function Navbar() {
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
+                
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     
                     <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                        <Link to="/TelephoneSystems" className='nav-links' onClick={closeMobileMenu}>
                            <p className = 'navText' >Telephone Systems, VoIP</p> 
                         </Link>
                     </li>
 
                      <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                           <p className = 'navText' > Video Conferencing</p> 
-                        </Link>
-                    </li>
-
-                     <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                        <Link to="/Broadband" className='nav-links' onClick={closeMobileMenu}>
                            <p className = 'navText' >Broadband</p> 
                         </Link>
                     </li>
 
-                     <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                           <p className = 'navText' >Mobile SIM</p> 
-                        </Link>
-                    </li>
 
-                     <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                           <p className = 'navText'>Smart Inbound Numbers</p> 
-                        </Link>
-                    </li>
 
-                     <li className='nav-item'>
+
+
+                     <li
+                        className='nav-item'
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                      >
+                        <Link
+                        className='nav-links'
+                        onClick={extendElement}
+                        >
+                        All Services <i className='fas fa-caret-down' />
+                        </Link>
+                        {dropdown && <Dropdown 
+                        onCloseMobileMenu={closeMobileMenu}/>}
+                     </li>
+
+
+
+
+
+
+
+                    <li className='nav-item'>
                         <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
-                          <p className = 'navText'>SIP Trunks</p> 
+                           <p className = 'navText'>About</p> 
                         </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+                        <Link to="/Contact" className='nav-links' onClick={closeMobileMenu}>
                            <p className = 'navText'> Contact</p> 
                         </Link>
                     </li>
-                    <li className='nav-item'>
+
+
+                    <li className='nav-item-blank'>
                         <Link to="/Contact" className='nav-links-mobile' onClick={console.log('need to sort this out')} >
                             01442 573030
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle = 'btn--outline' > <img src={WhitePinkPhone} alt="" className='CTAPhone'/>01442 573030</Button>}
-
-            </div>
+                <div className='buttonHolder'>
+                                    {button && <Button buttonStyle = 'btn--outline' > <img src={WhitePinkPhone} alt="" className='CTAPhone'/>
+                 <p className='CTAText'>01442 573030 </p> </Button>}
+                </div>
+                {/* {button && <Button buttonStyle = 'btn--outline' > <img src={WhitePinkPhone} alt="" className='CTAPhone'/>
+                 <p className='CTAText'>01442 573030 </p> </Button>} */}
         </nav>
         </>
     )
@@ -109,37 +144,3 @@ export default Navbar
 
 
 
-
-
-
-// notes
-// 
-
-
-
-
-////////////////////////////////////////////////
-//Changing classname when you when you click on it
-////////////////////////////////////////////////
-
-
-//    const [click,setClick] = useState(false)
-//    const handleClick = () => setClick(!click)
-// <div className="menu-icon" onClick={handleClick}>
-//     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-// </div>
-
-
-
-// First you have to set the state to not clicked
-// then set a function to change the value to the opposide !click, when clicked on the OnClick methond inline. 
-// when you click, the first is the true, the second is the false
-
-
-////////////////////////////////////////////////
-// 
-////////////////////////////////////////////////
-
-// <ul className={click ? 'nav-menu active' : 'nav-menu'}></ul>
-
-// 

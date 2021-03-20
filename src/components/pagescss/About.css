@@ -1,0 +1,58 @@
+.AboutHero {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--colourBackLilac);
+  /* background-image: url("../../images/Hero1.jpeg"); */
+  /* margin-bottom: 20px; */
+  /* margin-top: 20px; */
+  display: grid;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+  color: var(--colourTextBlue);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.AboutHeroTitle {
+  font-size: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.AboutHeroTextContainer {
+  margin-top: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.AboutHeroText {
+  font-size: 1.2rem;
+  color: var(--colourTextGrey);
+}
+
+.CEOExperience {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.CEOExperienceTitle {
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-top: 50px;
+  color: var(--colourTextDark);
+}
+
+.CEOExperienceInnerContainer {
+  /* height: 7000px; */
+  width: 100%;
+}

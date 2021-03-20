@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
     return (
         <div className = 'footer'>
-            lovely footer howdy eduardos
+            <p>© Copyright 2021 Just2Connect.</p>
         </div>
     )
 }
